@@ -2,11 +2,22 @@
 {% block content %}
     {%if request.user.is_authenticated%}
 
-    <h1>Área restrita</h1>
-    Bem vindo <br>
-    <a href="/logouts/">Logout</a>
+        <h1>Área restrita</h1>
+        Bem vindo <br>
+        <a href="/logouts/">Logout</a>
+
+        <hr>
+            {% if perms.admin.can_edit_users %}
+                <p>How you can edit users , you can see this</p>
+            {% endif %}
+
+            {% if perms.admin.can_delete_posts %}
+                <p>How you can delete posts , you can see this</p>
+            {% endif %}
+            
     {% else %}
-    <h1>Você não tem acesso a essa area</h1>
+
+        <h1>Você não tem acesso a essa area</h1>
 
     {% endif %}
 {% endblock content %}
