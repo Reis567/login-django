@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+{% block content %}
+    <form name="form-users", id="formUsers", method="post" action="/store/">
+        <div class="col-6 mt-4 m-auto">
+            {% if msg %}
+                <div class="alert {{class}}">
+                    {{msg}}
+                </div>
+            {% endif %}
+            {% csrf_token %}
+            <input class="form-control mt-4" type="text" name="name" id="name" placeholder="Nome :">
+            <input class="form-control mt-4" type="text" name="user" id="user" placeholder="Nome do usuário :">
+            <input class="form-control mt-4" type="password" name="password" id="password" placeholder="Senha :">
+            <input class="form-control mt-4" type="password" name="password-conf" id="password-conf" placeholder="Confirmação de Senha :">
+            <input class="form-control mt-4" type="email" name="email" id="email" placeholder="Email :">
+            <input class="btn btn-primary mt-4" type="submit" value="Cadastrar" >
+
+        </div>
+
+    </form>
+{% endblock content %}
