@@ -1,0 +1,11 @@
+{% extends 'main.html' %}
+{% block content %}
+    {%if request.user.is_authenticated%}
+
+    <h1>Área restrita</h1>
+    Bem vindo
+    {% else %}
+    <h1>Você não tem acesso a essa area</h1>
+
+    {% endif %}
+{% endblock content %}
