@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.contrib.auth.models import User
-from django.contrib.auth import authenticate,login
+from django.contrib.auth import authenticate,login, logout
 
 # Create your views here.
 
@@ -47,3 +47,18 @@ def dologin(request):
 # Pagina inicial do dashboard
 def dashboard(request):
     return render(request, 'dashboard/home.html')
+
+# Logout do user
+def logouts(request):
+    logout(request)
+    return redirect('/painel/')
+
+
+# Alterar senha
+
+def changePassword(request):
+    user = User.objects.get(email=request.user.email)
+    user.set_password(request.POST['password'])
+    user.save()
+    logout(request)
+    return redirect('/painel/')
