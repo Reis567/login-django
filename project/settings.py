@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'sistema',
         'HOST': 'localhost',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'Matheus123',
         'PORT': '3306',
         'OPTIONS': {
             'init_command':'SET default_storage_engine=InnoDB'
@@ -125,7 +125,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIR = ('/static/')
+STATICFILES_DIRS = [BASE_DIR / 'static']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

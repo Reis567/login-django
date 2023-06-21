@@ -1,3 +1,179 @@
 body {
+    background-color: #cfecfa;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+}
+
+.area-login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #88d1b9;
+    width: 355px;
+    height: 350px;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #88d1b9;
+    width: 375px;
+    height: 520px;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+}
+
+.cadastro form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+}
+
+
+.login input {
+    margin-top: 10px;
+    background-color: white;
+    color: #88d1b9;
+    border: none;
+    height: 45px;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.cadastro input {
+    margin-top: 10px;
+    background-color: white;
+    color: #88d1b9;
+    border: none;
+    height: 45px;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.login p {
+    color: white;
+
+}
+
+.login a {
+    color: white;
+}
+
+.cadastro p {
+    color: white;
+
+}
+
+.cadastro a {
+    color: white;
+}
+
+.login-img {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+input::placeholder {
+    color: #6ba894;
+    font-size: 14px;
+}
+
+form [type="submit"] {
+    display: block;
+    background-color: #c1e4f5;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.area-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     
+    
+}
+
+.button-container {
+    background-color: #88d1b9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 420px;
+    width: 420px;
+    border-radius: 18px;
+}
+
+.button {
+    display: block;
+    color: #75cbf7;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+.repository{
+    margin-top: 18px;
+    color: #cfecfa;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.repository a{
+
+    color: #cfecfa;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.area-restrita-vh {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.area-restrita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

@@ -1,6 +1,15 @@
 {% extends 'main.html' %}
+
 {% block content %}
-    <a href="/create/">Cadastro de usuários</a>
-    <a href="/painel/">Painel de Login</a>
+<section class="area-buttons">
     
+    <div class="button-container">
+        <div class="login-img">
+            <h2 >Django Login system</h2>
+        </div>
+        <a href="/painel/" class="button">Painel de Login</a>
+        <a href="/create/" class="button">Cadastro de usuários</a>
+        <p class="repository">This project repository <a href="https://github.com/Reis567/login-django">Click here !</a></p>
+    </div>
+</section>
 {% endblock content %}
